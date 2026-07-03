@@ -20,8 +20,7 @@ if __name__ == "__main__":
 '''
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
-
+client = OpenAI(api_key="API KEY")
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
         model="gpt-4o-mini",
@@ -41,4 +40,3 @@ if __name__ == "__main__":
         response = chat_with_gpt(user_input)
         print("Chatbot:", response)
 
-#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        
